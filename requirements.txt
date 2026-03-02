@@ -1,0 +1,20 @@
+# AI Employee - Bronze Tier Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core dependencies (required)
+# Python 3.13+ required
+
+# File system watching (for filesystem_watcher.py)
+# No additional dependencies needed - uses standard library
+
+# Gmail Watcher (optional - for gmail_watcher.py)
+# Uncomment if you want to use Gmail integration
+# google-api-python-client>=2.0.0
+# google-auth-httplib2>=0.1.0
+# google-auth-oauthlib>=1.0.0
+
+# Optional: Better file watching
+# watchdog>=3.0.0
+
+# Note: For Bronze Tier, the File System Watcher works without any
+# external API dependencies. Just drag files into the Inbox folder!

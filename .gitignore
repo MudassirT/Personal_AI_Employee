@@ -1,0 +1,67 @@
+# AI Employee .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Credentials and Secrets (NEVER COMMIT THESE)
+credentials.json
+token.json
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.crt
+
+# Watcher state files
+.processed_ids.txt
+
+# Logs
+*.log
+Logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Obsidian (optional - sync your vault if you want)
+# AI_Employee_Vault/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Approved/Pending files with sensitive data
+Pending_Approval/*.md
+Approved/*.md
