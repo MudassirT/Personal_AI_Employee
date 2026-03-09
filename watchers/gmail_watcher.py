@@ -25,14 +25,14 @@ from base_watcher import BaseWatcher
 # Gmail API imports (install: pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib)
 try:
     from google.oauth2.credentials import Credentials
-    from google.oauth2 import client_config
     from google_auth_oauthlib.flow import InstalledAppFlow
     from googleapiclient.discovery import build
     from googleapiclient.errors import HttpError
     from google.auth.transport.requests import Request
     GMAIL_AVAILABLE = True
-except ImportError:
+except ImportError as e:
     GMAIL_AVAILABLE = False
+    print(f"Import error: {e}")
     print("Gmail API libraries not installed. Run: pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib")
 
 
@@ -325,18 +325,21 @@ status: unread
     def _sanitize_filename(self, text: str) -> str:
         """
         Sanitize text for use in filename.
-        
+
         Args:
             text: Text to sanitize
-            
+
         Returns:
             Sanitized filename-safe string
         """
+        import re
+        # Remove emoji and other non-ASCII characters
+        text = re.sub(r'[^\x00-\x7F]+', '', text)
         # Remove or replace invalid characters
         invalid_chars = '<>:"/\\|？*'
         for char in invalid_chars:
             text = text.replace(char, '_')
-        return text.strip()
+        return text.strip()[:50]
     
     def _mark_as_read(self, message_id: str):
         """

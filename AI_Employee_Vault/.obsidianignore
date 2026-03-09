@@ -1,0 +1,20 @@
+# Obsidian Ignore File
+# These files and folders will be hidden from Obsidian
+
+# Log files
+Logs/
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Session files
+*.json
+
+# Processed IDs tracking
+.processed_ids.txt
+
+# Temporary files
+*.tmp

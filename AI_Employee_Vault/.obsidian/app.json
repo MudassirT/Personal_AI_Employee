@@ -1,1 +1,37 @@
-{}
+{
+  "alwaysUpdateFiles": true,
+  "attachmentFolderPath": "Attachments",
+  "useMarkdownLinks": false,
+  "newLinkFormat": "shortest",
+  "useWikilinks": true,
+  "showUnsupportedFiles": false,
+  "showExtension": false,
+  "strictLineBreaks": false,
+  "propertiesInDocument": "visible",
+  "readableLineLength": true,
+  "spellcheck": false,
+  "spellcheckLanguages": null,
+  "showLineNumber": false,
+  "focusNewTab": true,
+  "defaultViewMode": "source",
+  "livePreview": true,
+  "userIgnoreFilters": [
+    "Logs/",
+    "__pycache__/",
+    "*.pyc",
+    "*.log",
+    ".processed_ids.txt"
+  ],
+  "mobilePullAction": "",
+  "mobilePullActionThreshold": 0.7,
+  "emacsKeys": false,
+  "mobileQuickRibbonItem": false,
+  "showFrontmatter": false,
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}
