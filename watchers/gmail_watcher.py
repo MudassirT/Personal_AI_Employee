@@ -265,37 +265,54 @@ status: unread
     def _extract_body(self, payload: Dict[str, Any]) -> str:
         """
         Extract email body from payload.
-        
+        Prefers plain text over HTML.
+
         Args:
             payload: Gmail message payload
-            
+
         Returns:
-            Email body text
+            Email body text (plain text only)
         """
-        body = ""
-        
+        plain_text = ""
+        html_text = ""
+
         # Check for multipart
         if 'parts' in payload:
             for part in payload['parts']:
                 if part['mimeType'] == 'text/plain':
                     if 'data' in part['body']:
                         data = part['body']['data']
-                        body += base64.urlsafe_b64decode(data).decode('utf-8', errors='replace')
+                        plain_text += base64.urlsafe_b64decode(data).decode('utf-8', errors='replace')
                 elif part['mimeType'] == 'text/html':
                     if 'data' in part['body']:
                         data = part['body']['data']
-                        # Could add HTML stripping here
-                        body += base64.urlsafe_b64decode(data).decode('utf-8', errors='replace')
+                        html_text += base64.urlsafe_b64decode(data).decode('utf-8', errors='replace')
         else:
             # Single part
             if 'body' in payload and 'data' in payload['body']:
                 data = payload['body']['data']
-                body = base64.urlsafe_b64decode(data).decode('utf-8', errors='replace')
-        
+                content = base64.urlsafe_b64decode(data).decode('utf-8', errors='replace')
+                # Check if it's plain text or HTML
+                if '<html' in content.lower() or '<!DOCTYPE' in content.lower():
+                    html_text = content
+                else:
+                    plain_text = content
+
+        # Prefer plain text, otherwise strip HTML tags
+        if plain_text:
+            body = plain_text
+        elif html_text:
+            # Strip HTML tags
+            import re
+            body = re.sub(r'<[^>]+>', '', html_text)  # Remove HTML tags
+            body = re.sub(r'\s+', ' ', body)  # Normalize whitespace
+        else:
+            body = ""
+
         # Truncate if too long
         if len(body) > 5000:
             body = body[:5000] + "\n\n... [truncated]"
-        
+
         return body.strip() or "[No text content]"
     
     def _determine_priority(self, headers: Dict[str, str], body: str) -> str:

@@ -350,10 +350,15 @@ def main():
 
     # Check if session exists (user has already authenticated)
     session_path = Path(__file__).parent / 'linkedin_session'
-    session_exists = session_path.exists() and (session_path / 'Default').exists()
+    # Check for multiple indicators of valid session
+    session_exists = (
+        session_path.exists() and 
+        (session_path / 'Default').exists() and
+        (session_path / 'Local State').exists()
+    )
     
-    # Use headless mode if session exists, otherwise show browser
-    headless = session_exists
+    # ALWAYS use headless mode after first auth
+    headless = True  # Force headless to prevent browser window
     check_interval = 900  # Check every 15 minutes
 
     # Create and run watcher
@@ -369,14 +374,14 @@ def main():
     print(f"Vault: {vault_path}")
     print(f"Session: {watcher.session_path}")
     print(f"Check interval: {check_interval}s ({check_interval//60} min)")
-    print(f"Headless mode: {headless}")
+    print(f"Headless mode: {headless} (no browser window)")
     print()
     
     if not session_exists:
-        print("FIRST RUN: Log in to LinkedIn when browser opens")
-        print("Session will be saved for future runs")
+        print("WARNING: No saved session found. Authentication may be required.")
+        print("If login fails, delete the linkedin_session folder and re-run.")
     else:
-        print("Using saved session (headless mode)")
+        print("✓ Using saved session (running in background)")
     
     print()
     print("Press Ctrl+C to stop")

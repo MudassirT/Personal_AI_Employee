@@ -18,7 +18,7 @@ status: active
 | Metric                    | Value |
 | ------------------------- | ----- |
 | Tasks in Inbox            | 2 |
-| Tasks Needing Action      | 25 |
+| Tasks Needing Action      | 24 |
 | Tasks In Progress         | 0 |
 | Pending Approval          | 0 |
 | Tasks Completed Today     | 0 |
@@ -27,6 +27,292 @@ status: active
 ---
 
 ## Recent Activity
+
+- [2026-03-10 02:49:12] Processing: linkedin_connection_request from LINKEDIN_20260310_024424_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:49:12] Processing: linkedin_connection_request from LINKEDIN_20260310_024020_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:49:12] Processing: linkedin_connection_request from LINKEDIN_20260310_022452_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:49:12] Processing: linkedin_connection_request from LINKEDIN_20260310_020555_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:49:12] Processing: linkedin_connection_request from LINKEDIN_20260310_020927_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:49:12] Processing: linkedin_connection_request from LINKEDIN_20260310_015404_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:49:11] Processing: linkedin_connection_request from LINKEDIN_20260310_015028_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:49:11] Processing: linkedin_connection_request from LINKEDIN_20260310_014712_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:49:11] Processing: linkedin_connection_request from LINKEDIN_20260310_014320_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:49:11] Processing: linkedin_connection_request from LINKEDIN_20260310_013827_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:49:11] Processing: linkedin_connection_request from LINKEDIN_20260310_011115_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:49:11] Processing: linkedin_connection_request from LINKEDIN_20260310_010719_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:49:11] Processing: linkedin_connection_request from LINKEDIN_20260310_010552_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:49:11] Processing: email from EMAIL_20260310_024359_Noor_ your job alert for Frontend Developer in Kar.md
+
+- [2026-03-10 02:49:11] Processing: email from EMAIL_20260310_022544_Noor_ your job alert for Frontend Developer in Kar.md
+
+- [2026-03-10 02:49:11] Processing: file_drop from FILE_20260310_024356_test_silver_tier.md
+
+- [2026-03-10 02:49:11] Processing: file_drop from FILE_20260310_024356_checking.md
+
+- [2026-03-10 02:49:11] Processing: file_drop from FILE_20260310_024356_another.md
+
+- [2026-03-10 02:49:11] Processing: file_drop from FILE_20260310_014545_test_silver_tier.md
+
+- [2026-03-10 02:49:11] Processing: file_drop from FILE_20260310_015156_checking.md
+
+- [2026-03-10 02:49:11] Processing: file_drop from FILE_20260310_015256_another.md
+
+- [2026-03-10 02:49:11] Processing: linkedin_connection_request from LINKEDIN_20260310_011639_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:49:11] Processing: file_drop from FILE_20260302_123557_checking.md
+
+- [2026-03-10 02:49:11] Processing: file_drop from FILE_20260302_123527_checking.md
+
+- [2026-03-10 02:48:11] Processing: linkedin_connection_request from LINKEDIN_20260310_024424_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:48:11] Processing: linkedin_connection_request from LINKEDIN_20260310_024020_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:48:11] Processing: linkedin_connection_request from LINKEDIN_20260310_022452_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:48:11] Processing: linkedin_connection_request from LINKEDIN_20260310_020555_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:48:11] Processing: linkedin_connection_request from LINKEDIN_20260310_020927_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:48:11] Processing: linkedin_connection_request from LINKEDIN_20260310_015404_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:48:11] Processing: linkedin_connection_request from LINKEDIN_20260310_015028_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:48:11] Processing: linkedin_connection_request from LINKEDIN_20260310_014712_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:48:11] Processing: linkedin_connection_request from LINKEDIN_20260310_014320_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:48:11] Processing: linkedin_connection_request from LINKEDIN_20260310_013827_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:48:11] Processing: linkedin_connection_request from LINKEDIN_20260310_011115_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:48:11] Processing: linkedin_connection_request from LINKEDIN_20260310_010719_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:48:11] Processing: linkedin_connection_request from LINKEDIN_20260310_010552_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:48:11] Processing: email from EMAIL_20260310_024359_Noor_ your job alert for Frontend Developer in Kar.md
+
+- [2026-03-10 02:48:11] Processing: email from EMAIL_20260310_022544_Noor_ your job alert for Frontend Developer in Kar.md
+
+- [2026-03-10 02:48:11] Processing: file_drop from FILE_20260310_024356_test_silver_tier.md
+
+- [2026-03-10 02:48:11] Processing: file_drop from FILE_20260310_024356_checking.md
+
+- [2026-03-10 02:48:11] Processing: file_drop from FILE_20260310_024356_another.md
+
+- [2026-03-10 02:48:11] Processing: file_drop from FILE_20260310_014545_test_silver_tier.md
+
+- [2026-03-10 02:48:11] Processing: file_drop from FILE_20260310_015156_checking.md
+
+- [2026-03-10 02:48:11] Processing: file_drop from FILE_20260310_015256_another.md
+
+- [2026-03-10 02:48:10] Processing: linkedin_connection_request from LINKEDIN_20260310_011639_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:48:10] Processing: file_drop from FILE_20260302_123557_checking.md
+
+- [2026-03-10 02:48:10] Processing: file_drop from FILE_20260302_123527_checking.md
+
+- [2026-03-10 02:47:10] Processing: email from EMAIL_20260310_024359_Noor_ your job alert for Frontend Developer in Kar.md
+
+- [2026-03-10 02:47:10] Processing: email from EMAIL_20260310_022544_Noor_ your job alert for Frontend Developer in Kar.md
+
+- [2026-03-10 02:47:10] Processing: linkedin_connection_request from LINKEDIN_20260310_024424_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:47:10] Processing: file_drop from FILE_20260310_024356_test_silver_tier.md
+
+- [2026-03-10 02:47:10] Processing: file_drop from FILE_20260310_024356_checking.md
+
+- [2026-03-10 02:47:10] Processing: file_drop from FILE_20260310_024356_another.md
+
+- [2026-03-10 02:47:10] Processing: linkedin_connection_request from LINKEDIN_20260310_024020_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:47:10] Processing: file_drop from FILE_20260310_014545_test_silver_tier.md
+
+- [2026-03-10 02:47:10] Processing: file_drop from FILE_20260310_015156_checking.md
+
+- [2026-03-10 02:47:10] Processing: linkedin_connection_request from LINKEDIN_20260310_022452_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:47:09] Processing: file_drop from FILE_20260310_015256_another.md
+
+- [2026-03-10 02:47:09] Processing: linkedin_connection_request from LINKEDIN_20260310_020927_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:47:09] Processing: linkedin_connection_request from LINKEDIN_20260310_020555_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:47:09] Processing: linkedin_connection_request from LINKEDIN_20260310_015404_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:47:08] Processing: linkedin_connection_request from LINKEDIN_20260310_015028_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:47:08] Processing: linkedin_connection_request from LINKEDIN_20260310_014712_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:47:08] Processing: linkedin_connection_request from LINKEDIN_20260310_014320_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:47:08] Processing: linkedin_connection_request from LINKEDIN_20260310_013827_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:47:08] Processing: linkedin_connection_request from LINKEDIN_20260310_011639_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:47:08] Processing: linkedin_connection_request from LINKEDIN_20260310_011115_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:47:07] Processing: linkedin_connection_request from LINKEDIN_20260310_010719_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:47:07] Processing: linkedin_connection_request from LINKEDIN_20260310_010552_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:47:07] Processing: file_drop from FILE_20260302_123557_checking.md
+
+- [2026-03-10 02:47:07] Processing: file_drop from FILE_20260302_123527_checking.md
+
+- [2026-03-10 02:46:07] Processing: email from EMAIL_20260310_022544_Noor_ your job alert for Frontend Developer in Kar.md
+
+- [2026-03-10 02:46:07] Processing: linkedin_connection_request from LINKEDIN_20260310_024424_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:46:07] Processing: email from EMAIL_20260310_024359_Noor_ your job alert for Frontend Developer in Kar.md
+
+- [2026-03-10 02:46:06] Processing: file_drop from FILE_20260310_024356_test_silver_tier.md
+
+- [2026-03-10 02:46:06] Processing: file_drop from FILE_20260310_024356_checking.md
+
+- [2026-03-10 02:46:06] Processing: file_drop from FILE_20260310_024356_another.md
+
+- [2026-03-10 02:46:06] Processing: linkedin_connection_request from LINKEDIN_20260310_024020_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:46:06] Processing: file_drop from FILE_20260310_014545_test_silver_tier.md
+
+- [2026-03-10 02:46:06] Processing: file_drop from FILE_20260310_015156_checking.md
+
+- [2026-03-10 02:46:06] Processing: linkedin_connection_request from LINKEDIN_20260310_022452_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:46:06] Processing: file_drop from FILE_20260310_015256_another.md
+
+- [2026-03-10 02:46:06] Processing: linkedin_connection_request from LINKEDIN_20260310_020927_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:46:06] Processing: linkedin_connection_request from LINKEDIN_20260310_020555_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:46:06] Processing: linkedin_connection_request from LINKEDIN_20260310_015404_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:46:06] Processing: linkedin_connection_request from LINKEDIN_20260310_015028_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:46:06] Processing: linkedin_connection_request from LINKEDIN_20260310_014712_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:46:06] Processing: linkedin_connection_request from LINKEDIN_20260310_014320_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:46:06] Processing: linkedin_connection_request from LINKEDIN_20260310_013827_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:46:06] Processing: linkedin_connection_request from LINKEDIN_20260310_011639_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:46:06] Processing: linkedin_connection_request from LINKEDIN_20260310_011115_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:46:06] Processing: linkedin_connection_request from LINKEDIN_20260310_010719_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:46:06] Processing: linkedin_connection_request from LINKEDIN_20260310_010552_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:46:06] Processing: file_drop from FILE_20260302_123557_checking.md
+
+- [2026-03-10 02:46:06] Processing: file_drop from FILE_20260302_123527_checking.md
+
+- [2026-03-10 02:45:06] Processing: linkedin_connection_request from LINKEDIN_20260310_024424_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:45:06] Processing: email from EMAIL_20260310_024359_Noor_ your job alert for Frontend Developer in Kar.md
+
+- [2026-03-10 02:45:05] Processing: file_drop from FILE_20260310_024356_test_silver_tier.md
+
+- [2026-03-10 02:45:05] Processing: file_drop from FILE_20260310_024356_checking.md
+
+- [2026-03-10 02:45:05] Processing: file_drop from FILE_20260310_024356_another.md
+
+- [2026-03-10 02:45:05] Processing: linkedin_connection_request from LINKEDIN_20260310_024020_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:45:05] Processing: file_drop from FILE_20260310_014545_test_silver_tier.md
+
+- [2026-03-10 02:45:05] Processing: file_drop from FILE_20260310_015156_checking.md
+
+- [2026-03-10 02:45:05] Processing: email from EMAIL_20260310_022544_Noor_ your job alert for Frontend Developer in Kar.md
+
+- [2026-03-10 02:45:05] Processing: linkedin_connection_request from LINKEDIN_20260310_022452_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:45:05] Processing: file_drop from FILE_20260310_015256_another.md
+
+- [2026-03-10 02:45:05] Processing: linkedin_connection_request from LINKEDIN_20260310_020927_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:45:05] Processing: linkedin_connection_request from LINKEDIN_20260310_020555_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:45:05] Processing: linkedin_connection_request from LINKEDIN_20260310_015404_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:45:05] Processing: linkedin_connection_request from LINKEDIN_20260310_015028_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:45:05] Processing: linkedin_connection_request from LINKEDIN_20260310_014712_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:45:04] Processing: linkedin_connection_request from LINKEDIN_20260310_014320_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:45:04] Processing: linkedin_connection_request from LINKEDIN_20260310_013827_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:45:04] Processing: linkedin_connection_request from LINKEDIN_20260310_011639_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:45:04] Processing: linkedin_connection_request from LINKEDIN_20260310_011115_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:45:04] Processing: linkedin_connection_request from LINKEDIN_20260310_010719_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:45:04] Processing: linkedin_connection_request from LINKEDIN_20260310_010552_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:45:04] Processing: file_drop from FILE_20260302_123557_checking.md
+
+- [2026-03-10 02:45:04] Processing: file_drop from FILE_20260302_123527_checking.md
+
+- [2026-03-10 02:44:04] Processing: email from EMAIL_20260310_024359_Noor_ your job alert for Frontend Developer in Kar.md
+
+- [2026-03-10 02:44:04] Processing: file_drop from FILE_20260310_024356_test_silver_tier.md
+
+- [2026-03-10 02:44:04] Processing: file_drop from FILE_20260310_024356_checking.md
+
+- [2026-03-10 02:44:04] Processing: file_drop from FILE_20260310_024356_another.md
+
+- [2026-03-10 02:44:04] Processing: linkedin_connection_request from LINKEDIN_20260310_024020_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:44:04] Processing: file_drop from FILE_20260310_014545_test_silver_tier.md
+
+- [2026-03-10 02:44:04] Processing: file_drop from FILE_20260310_015156_checking.md
+
+- [2026-03-10 02:44:04] Processing: email from EMAIL_20260310_022544_Noor_ your job alert for Frontend Developer in Kar.md
+
+- [2026-03-10 02:44:04] Processing: linkedin_connection_request from LINKEDIN_20260310_022452_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:44:04] Processing: file_drop from FILE_20260310_015256_another.md
+
+- [2026-03-10 02:44:03] Processing: linkedin_connection_request from LINKEDIN_20260310_020927_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:44:03] Processing: linkedin_connection_request from LINKEDIN_20260310_020555_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:44:03] Processing: linkedin_connection_request from LINKEDIN_20260310_015404_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:44:03] Processing: linkedin_connection_request from LINKEDIN_20260310_015028_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:44:03] Processing: linkedin_connection_request from LINKEDIN_20260310_014712_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:44:03] Processing: linkedin_connection_request from LINKEDIN_20260310_014320_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:44:03] Processing: linkedin_connection_request from LINKEDIN_20260310_013827_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:44:03] Processing: linkedin_connection_request from LINKEDIN_20260310_011639_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:44:03] Processing: linkedin_connection_request from LINKEDIN_20260310_011115_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:44:03] Processing: linkedin_connection_request from LINKEDIN_20260310_010719_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:44:03] Processing: linkedin_connection_request from LINKEDIN_20260310_010552_CONNECTION_REQUEST.md
+
+- [2026-03-10 02:44:03] Processing: file_drop from FILE_20260302_123557_checking.md
+
+- [2026-03-10 02:44:03] Processing: file_drop from FILE_20260302_123527_checking.md
 
 - [2026-03-10 02:19:24] Processing: file_drop from FILE_20260310_015256_another.md
 
