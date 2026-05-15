@@ -93,7 +93,7 @@ View job: https://www.linkedin.com/comm/jobs/view/4382385339?alertAction=markasv
 ## Suggested Actions
 
 - [ ] Read and understand the email
-- [ ] Reply to sender
+- [x] Reply to sender
 - [ ] Forward to relevant party
 - [ ] Create follow-up task
 - [ ] Archive after processing
