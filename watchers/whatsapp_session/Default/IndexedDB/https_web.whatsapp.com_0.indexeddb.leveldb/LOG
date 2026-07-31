@@ -1,0 +1,23 @@
+2026/07/12-17:43:47.397 c50 Reusing MANIFEST C:\Users\HS LAPTOP\OneDrive\Desktop\Personal_AI_Employee-main\watchers\whatsapp_session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/07/12-17:43:47.398 c50 Recovering log #306
+2026/07/12-17:43:47.481 c50 Reusing old log C:\Users\HS LAPTOP\OneDrive\Desktop\Personal_AI_Employee-main\watchers\whatsapp_session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000306.log 
+2026/07/12-17:43:47.481 c50 Delete type=2 #301
+2026/07/12-17:43:47.481 c50 Delete type=2 #302
+2026/07/12-17:43:47.481 c50 Delete type=2 #303
+2026/07/12-17:43:47.482 c50 Delete type=2 #304
+2026/07/12-17:43:47.482 c50 Delete type=2 #307
+2026/07/12-17:43:55.908 c50 Level-0 table #314: started
+2026/07/12-17:43:55.975 c50 Level-0 table #314: 1064449 bytes OK
+2026/07/12-17:43:55.985 c50 Delete type=0 #306
+2026/07/12-17:44:54.343 c50 Compacting 1@1 + 4@2 files
+2026/07/12-17:44:54.421 c50 Generated table #315@1: 46350 keys, 2198703 bytes
+2026/07/12-17:44:54.499 c50 Generated table #316@1: 57101 keys, 2224431 bytes
+2026/07/12-17:44:54.560 c50 Generated table #317@1: 27704 keys, 2184335 bytes
+2026/07/12-17:44:54.587 c50 Generated table #318@1: 15997 keys, 721828 bytes
+2026/07/12-17:44:54.587 c50 Compacted 1@1 + 4@2 files => 7329297 bytes
+2026/07/12-17:44:54.593 c50 compacted to: files[ 0 0 4 0 0 0 0 ]
+2026/07/12-17:44:54.594 c50 Delete type=2 #308
+2026/07/12-17:44:54.594 c50 Delete type=2 #309
+2026/07/12-17:44:54.594 c50 Delete type=2 #310
+2026/07/12-17:44:54.594 c50 Delete type=2 #311
+2026/07/12-17:44:54.594 c50 Delete type=2 #314

@@ -1,0 +1,17 @@
+2026/07/12-17:41:43.569 61c Reusing MANIFEST C:\Users\HS LAPTOP\OneDrive\Desktop\Personal_AI_Employee-main\watchers\whatsapp_session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/07/12-17:41:43.570 61c Recovering log #299
+2026/07/12-17:41:43.619 61c Reusing old log C:\Users\HS LAPTOP\OneDrive\Desktop\Personal_AI_Employee-main\watchers\whatsapp_session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000299.log 
+2026/07/12-17:41:43.619 61c Delete type=2 #296
+2026/07/12-17:41:43.619 61c Delete type=2 #297
+2026/07/12-17:41:43.620 61c Delete type=2 #298
+2026/07/12-17:41:43.620 61c Delete type=2 #300
+2026/07/12-17:41:50.407 61c Level-0 table #307: started
+2026/07/12-17:41:50.468 61c Level-0 table #307: 1151143 bytes OK
+2026/07/12-17:41:50.477 61c Delete type=0 #299
+2026/07/12-17:41:50.506 61c Compacting 1@1 + 4@2 files
+2026/07/12-17:41:50.643 61c Generated table #308@1: 46205 keys, 2197502 bytes
+2026/07/12-17:41:50.892 61c Generated table #309@1: 56488 keys, 2223770 bytes
+2026/07/12-17:41:51.016 61c Generated table #310@1: 29981 keys, 2187481 bytes
+2026/07/12-17:41:51.040 61c Generated table #311@1: 12344 keys, 648842 bytes
+2026/07/12-17:41:51.040 61c Compacted 1@1 + 4@2 files => 7257595 bytes
+2026/07/12-17:41:51.044 61c compacted to: files[ 0 0 4 0 0 0 0 ]
