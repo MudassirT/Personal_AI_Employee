@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 2026/07/11-16:25:30.452 2498 Reusing MANIFEST C:\Users\HS LAPTOP\OneDrive\Desktop\Personal_AI_Employee-main\watchers\linkedin_session\Default\Local Storage\leveldb/MANIFEST-000001
+=======
+2026/03/10-02:51:38.404 49fc Reusing MANIFEST C:\Users\HS LAPTOP\OneDrive\Documents\GitHub\Personal_AI_Employee\watchers\linkedin_session\Default\Local Storage\leveldb/MANIFEST-000001
+2026/03/10-02:51:38.424 49fc Recovering log #4
+2026/03/10-02:51:38.425 49fc Reusing old log C:\Users\HS LAPTOP\OneDrive\Documents\GitHub\Personal_AI_Employee\watchers\linkedin_session\Default\Local Storage\leveldb/000004.log 
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73

@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 2026/07/12-17:43:46.387 36c0 Reusing MANIFEST C:\Users\HS LAPTOP\OneDrive\Desktop\Personal_AI_Employee-main\watchers\whatsapp_session\Default\Service Worker\Database/MANIFEST-000001
 2026/07/12-17:43:46.389 36c0 Recovering log #3
 2026/07/12-17:43:46.390 36c0 Reusing old log C:\Users\HS LAPTOP\OneDrive\Desktop\Personal_AI_Employee-main\watchers\whatsapp_session\Default\Service Worker\Database/000003.log 
+=======
+2026/03/10-01:49:00.965 39fc Reusing MANIFEST C:\Users\HS LAPTOP\OneDrive\Documents\GitHub\Personal_AI_Employee\watchers\whatsapp_session\Default\Service Worker\Database/MANIFEST-000001
+2026/03/10-01:49:00.966 39fc Recovering log #3
+2026/03/10-01:49:00.967 39fc Reusing old log C:\Users\HS LAPTOP\OneDrive\Documents\GitHub\Personal_AI_Employee\watchers\whatsapp_session\Default\Service Worker\Database/000003.log 
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73

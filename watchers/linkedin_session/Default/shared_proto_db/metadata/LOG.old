@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 2026/03/10-02:51:38.434 49fc Reusing MANIFEST C:\Users\HS LAPTOP\OneDrive\Documents\GitHub\Personal_AI_Employee\watchers\linkedin_session\Default\shared_proto_db\metadata/MANIFEST-000001
 2026/03/10-02:51:38.435 49fc Recovering log #3
 2026/03/10-02:51:38.436 49fc Reusing old log C:\Users\HS LAPTOP\OneDrive\Documents\GitHub\Personal_AI_Employee\watchers\linkedin_session\Default\shared_proto_db\metadata/000003.log 
+=======
+2026/03/10-02:45:06.865 1810 Reusing MANIFEST C:\Users\HS LAPTOP\OneDrive\Documents\GitHub\Personal_AI_Employee\watchers\linkedin_session\Default\shared_proto_db\metadata/MANIFEST-000001
+2026/03/10-02:45:06.865 1810 Recovering log #3
+2026/03/10-02:45:06.866 1810 Reusing old log C:\Users\HS LAPTOP\OneDrive\Documents\GitHub\Personal_AI_Employee\watchers\linkedin_session\Default\shared_proto_db\metadata/000003.log 
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73

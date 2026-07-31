@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 2026/07/12-17:43:46.391 3538 Reusing MANIFEST C:\Users\HS LAPTOP\OneDrive\Desktop\Personal_AI_Employee-main\watchers\whatsapp_session\Default\Sync Data\LevelDB/MANIFEST-000001
 2026/07/12-17:43:46.391 3538 Recovering log #3
 2026/07/12-17:43:46.392 3538 Reusing old log C:\Users\HS LAPTOP\OneDrive\Desktop\Personal_AI_Employee-main\watchers\whatsapp_session\Default\Sync Data\LevelDB/000003.log 
+=======
+2026/03/10-01:49:00.902 5118 Reusing MANIFEST C:\Users\HS LAPTOP\OneDrive\Documents\GitHub\Personal_AI_Employee\watchers\whatsapp_session\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/03/10-01:49:00.907 5118 Recovering log #3
+2026/03/10-01:49:00.908 5118 Reusing old log C:\Users\HS LAPTOP\OneDrive\Documents\GitHub\Personal_AI_Employee\watchers\whatsapp_session\Default\Sync Data\LevelDB/000003.log 
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73

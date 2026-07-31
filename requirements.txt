@@ -18,7 +18,10 @@
 
 # Note: For Bronze Tier, the File System Watcher works without any
 # external API dependencies. Just drag files into the Inbox folder!
+<<<<<<< HEAD
 
 # Optional Silver Tier dependencies
 playwright>=1.40.0
 schedule>=1.2.0
+=======
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73

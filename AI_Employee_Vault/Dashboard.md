@@ -18,16 +18,24 @@ status: active
 | Metric                    | Value |
 | ------------------------- | ----- |
 | Tasks in Inbox            | 2 |
+<<<<<<< HEAD
 | Tasks Needing Action      | 25 |
 | Tasks In Progress         | 0 |
 | Pending Approval          | 0 |
 | Tasks Completed Today     | 2 |
+=======
+| Tasks Needing Action      | 24 |
+| Tasks In Progress         | 0 |
+| Pending Approval          | 0 |
+| Tasks Completed Today     | 0 |
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
 | Tasks Completed This Week | 0     |
 
 ---
 
 ## Recent Activity
 
+<<<<<<< HEAD
 - [2026-07-11 16:17:46] Processing: linkedin_connection_request from LINKEDIN_20260310_025205_CONNECTION_REQUEST.md
 
 - [2026-07-11 16:17:46] Processing: linkedin_connection_request from LINKEDIN_20260310_024424_CONNECTION_REQUEST.md
@@ -128,6 +136,8 @@ status: active
 
 - [2026-07-11 16:16:45] Processing: email from EMAIL_20260310_022544_Noor_ your job alert for Frontend Developer in Kar.md
 
+=======
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
 - [2026-03-10 02:49:12] Processing: linkedin_connection_request from LINKEDIN_20260310_024424_CONNECTION_REQUEST.md
 
 - [2026-03-10 02:49:12] Processing: linkedin_connection_request from LINKEDIN_20260310_024020_CONNECTION_REQUEST.md

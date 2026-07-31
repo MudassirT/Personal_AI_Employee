@@ -1,11 +1,16 @@
 """
+<<<<<<< HEAD
 Orchestrator - Master process for the AI Employee (Gold Tier Enhanced).
+=======
+Orchestrator - Master process for the AI Employee.
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
 
 The orchestrator:
 1. Monitors the Needs_Action folder for new items
 2. Triggers Qwen Code to process items
 3. Updates the Dashboard with activity
 4. Manages the overall workflow
+<<<<<<< HEAD
 5. Error recovery and graceful degradation
 6. Ralph Wiggum loop for autonomous task completion
 
@@ -13,6 +18,14 @@ Usage:
     python orchestrator.py                    # Continuous mode
     python orchestrator.py --process-once     # Single run (scheduled)
     python orchestrator.py --ralph-loop 10    # Autonomous mode (10 iterations)
+=======
+
+For Bronze Tier: Simple file-based orchestration that prepares tasks
+for Qwen Code processing.
+
+Usage:
+    python orchestrator.py
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
 """
 
 import os
@@ -20,6 +33,7 @@ import sys
 import time
 import logging
 import subprocess
+<<<<<<< HEAD
 import json
 import signal
 import traceback
@@ -346,14 +360,25 @@ class RalphWiggumLoop:
         if list(self.orchestrator.pending_approval.glob("*.md")):
             return True
         return False
+=======
+from pathlib import Path
+from datetime import datetime
+from typing import List, Optional, Dict, Any
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
 
 
 class Orchestrator:
     """
+<<<<<<< HEAD
     Main orchestrator for the AI Employee system (Gold Tier).
     
     Coordinates between watchers, Qwen Code, and the Obsidian vault.
     Includes error recovery, circuit breakers, and autonomous mode.
+=======
+    Main orchestrator for the AI Employee system.
+
+    Coordinates between watchers, Qwen Code, and the Obsidian vault.
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
     """
     
     def __init__(self, vault_path: str, check_interval: int = 60):
@@ -388,14 +413,18 @@ class Orchestrator:
         # Setup logging
         self.logger = self._setup_logging()
         
+<<<<<<< HEAD
         # Error recovery manager
         self.error_recovery = ErrorRecoveryManager(vault_path)
         
+=======
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
         # Statistics
         self.stats = {
             'tasks_processed': 0,
             'tasks_pending_approval': 0,
             'tasks_completed_today': 0,
+<<<<<<< HEAD
             'last_activity': None,
             'errors_recovered': 0,
             'degradations': 0
@@ -404,6 +433,10 @@ class Orchestrator:
         # Task tracking
         self.task_records: Dict[str, TaskRecord] = {}
         self._load_task_records()
+=======
+            'last_activity': None
+        }
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
     
     def _ensure_directories(self):
         """Ensure all required directories exist."""
@@ -414,10 +447,14 @@ class Orchestrator:
             self.pending_approval,
             self.approved,
             self.plans,
+<<<<<<< HEAD
             self.logs_dir,
             self.vault_path / 'Odoo',
             self.vault_path / 'Social',
             self.vault_path / 'Audits'
+=======
+            self.logs_dir
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
         ]
         for d in dirs:
             d.mkdir(parents=True, exist_ok=True)
@@ -448,6 +485,7 @@ class Orchestrator:
         
         return logger
     
+<<<<<<< HEAD
     def _load_task_records(self):
         """Load task records from disk."""
         records_file = self.logs_dir / "task_records.json"
@@ -507,6 +545,8 @@ class Orchestrator:
                     setattr(record, k, v)
             self._save_task_records()
     
+=======
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
     def count_files(self, directory: Path) -> int:
         """Count .md files in a directory."""
         if not directory.exists():
@@ -560,7 +600,10 @@ class Orchestrator:
                 
         except Exception as e:
             self.logger.error(f'Error updating dashboard: {e}')
+<<<<<<< HEAD
             self.error_recovery.record_error("dashboard", e)
+=======
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
     
     def _update_table_value(self, content: str, label: str, value: str) -> str:
         """Update a value in a markdown table."""
@@ -637,7 +680,14 @@ class Orchestrator:
     
     def process_needs_action(self):
         """
+<<<<<<< HEAD
         Process files in Needs_Action folder with error recovery.
+=======
+        Process files in Needs_Action folder.
+        
+        For Bronze Tier: This prepares files for Claude Code processing
+        and provides instructions for the user.
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
         """
         files = self.get_needs_action_files()
         
@@ -648,9 +698,12 @@ class Orchestrator:
         self.logger.info(f'Found {len(files)} file(s) to process')
         
         for filepath in files:
+<<<<<<< HEAD
             task_record = self._create_task_record(filepath)
             self._update_task_status(task_record.task_id, TaskStatus.IN_PROGRESS)
             
+=======
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
             try:
                 self.logger.info(f'Processing: {filepath.name}')
                 
@@ -664,6 +717,7 @@ class Orchestrator:
                 # Log activity
                 self.log_activity('Processing', f'{file_type} from {filepath.name}')
                 
+<<<<<<< HEAD
                 # Move to In_Progress
                 in_progress_path = self.in_progress / filepath.name
                 filepath.rename(in_progress_path)
@@ -694,6 +748,16 @@ class Orchestrator:
                     self.logger.info(f"Will retry {filepath.name} (attempt {task_record.retry_count + 1}/{task_record.max_retries})")
                 else:
                     self.logger.error(f"Max retries exceeded for {filepath.name}")
+=======
+                # For Bronze Tier: Create a plan file
+                self._create_plan(filepath, content)
+                
+                # Update stats
+                self.stats['tasks_processed'] += 1
+                
+            except Exception as e:
+                self.logger.error(f'Error processing {filepath.name}: {e}')
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
     
     def _extract_metadata(self, content: str, key: str, default: str = '') -> str:
         """Extract metadata from YAML frontmatter."""
@@ -712,18 +776,33 @@ class Orchestrator:
         
         return default
     
+<<<<<<< HEAD
     def _create_plan(self, filepath: Path, content: str, task_record: TaskRecord):
         """
         Create a plan file for Qwen Code to process.
+=======
+    def _create_plan(self, filepath: Path, content: str):
+        """
+        Create a plan file for Qwen Code to process.
+
+        For Bronze Tier, this is a simple instruction file.
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
         """
         try:
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
             plan_filename = f'PLAN_{filepath.stem}_{timestamp}.md'
+<<<<<<< HEAD
             
             plan_content = f'''---
 created: {datetime.now().isoformat()}
 source_file: {filepath.name}
 task_id: {task_record.task_id}
+=======
+
+            plan_content = f'''---
+created: {datetime.now().isoformat()}
+source_file: {filepath.name}
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
 status: ready_for_qwen
 ---
 
@@ -731,7 +810,10 @@ status: ready_for_qwen
 
 ## Source
 File: {filepath.name}
+<<<<<<< HEAD
 Task ID: {task_record.task_id}
+=======
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
 Created: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 
 ---
@@ -742,8 +824,12 @@ Created: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 2. Understand the context and required actions
 3. Create appropriate responses or action items
 4. Update the Dashboard with progress
+<<<<<<< HEAD
 5. For sensitive actions: Create approval request in /Pending_Approval
 6. Move completed items to /Done folder
+=======
+5. Move completed items to /Done folder
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
 
 ---
 
@@ -763,25 +849,39 @@ Created: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 - [ ] Move to /Done when complete
 
 ---
+<<<<<<< HEAD
 *Generated by Orchestrator (Gold Tier)*
+=======
+*Generated by Orchestrator*
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
 '''
             
             plan_filepath = self.plans / plan_filename
             plan_filepath.write_text(plan_content, encoding='utf-8')
             
+<<<<<<< HEAD
             task_record.plan_file = plan_filename
+=======
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
             self.logger.info(f'Created plan: {plan_filename}')
             
         except Exception as e:
             self.logger.error(f'Error creating plan: {e}')
+<<<<<<< HEAD
             self.error_recovery.record_error("create_plan", e, {"source": filepath.name})
     
     def check_approved_actions(self):
         """Check for approved actions that need execution with error recovery."""
+=======
+    
+    def check_approved_actions(self):
+        """Check for approved actions that need execution."""
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
         files = list(self.approved.glob('*.md'))
         
         if files:
             self.logger.info(f'Found {len(files)} approved action(s) to execute')
+<<<<<<< HEAD
             for f in files:
                 try:
                     self.log_activity('Approved', f.name)
@@ -818,10 +918,27 @@ Created: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
         self.running = True
         self.logger.info('=' * 50)
         self.logger.info('AI Employee Orchestrator Starting (Gold Tier)')
+=======
+            # For Bronze Tier, just log that approval was received
+            for f in files:
+                self.log_activity('Approved', f.name)
+                # Move to Done after processing
+                try:
+                    f.rename(self.done / f.name)
+                except Exception as e:
+                    self.logger.error(f'Error moving approved file: {e}')
+    
+    def run(self):
+        """Main orchestration loop."""
+        self.running = True
+        self.logger.info('=' * 50)
+        self.logger.info('AI Employee Orchestrator Starting')
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
         self.logger.info(f'Vault Path: {self.vault_path}')
         self.logger.info(f'Check Interval: {self.check_interval}s')
         self.logger.info('=' * 50)
         
+<<<<<<< HEAD
         # Setup signal handlers for graceful shutdown
         signal.signal(signal.SIGINT, self._signal_handler)
         signal.signal(signal.SIGTERM, self._signal_handler)
@@ -829,6 +946,8 @@ Created: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
         consecutive_errors = 0
         max_consecutive_errors = 10
         
+=======
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
         try:
             while self.running:
                 try:
@@ -841,6 +960,7 @@ Created: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
                     # Check for approved actions
                     self.check_approved_actions()
                     
+<<<<<<< HEAD
                     # Reset consecutive error counter on success
                     consecutive_errors = 0
                     
@@ -856,6 +976,10 @@ Created: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
                             "Orchestrator paused. Check logs and restart manually."
                         )
                         break
+=======
+                except Exception as e:
+                    self.logger.error(f'Error in orchestration loop: {e}')
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
                 
                 time.sleep(self.check_interval)
                 
@@ -865,11 +989,14 @@ Created: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
             self.running = False
             self.logger.info('Orchestrator stopped')
     
+<<<<<<< HEAD
     def _signal_handler(self, signum, frame):
         """Handle shutdown signals."""
         self.logger.info(f"Received signal {signum}. Shutting down gracefully...")
         self.running = False
     
+=======
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
     def stop(self):
         """Stop the orchestrator."""
         self.running = False
@@ -878,6 +1005,15 @@ Created: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 def run_qwen_task(vault_path: str, prompt: str):
     """
     Run a Qwen Code task on the vault.
+<<<<<<< HEAD
+=======
+
+    This is a helper function to trigger Qwen Code processing.
+
+    Args:
+        vault_path: Path to the vault
+        prompt: Task prompt for Qwen
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
     """
     cmd = [
         'qwen',
@@ -886,17 +1022,25 @@ def run_qwen_task(vault_path: str, prompt: str):
     ]
 
     try:
+<<<<<<< HEAD
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+=======
+        result = subprocess.run(cmd, capture_output=True, text=True)
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
         return result.stdout
     except FileNotFoundError:
         print("Qwen Code not found. Please ensure Qwen Code is installed.")
         return None
+<<<<<<< HEAD
     except subprocess.TimeoutExpired:
         return "Qwen Code timed out after 5 minutes"
+=======
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
 
 
 def main():
     """Main entry point."""
+<<<<<<< HEAD
     import argparse
 
     parser = argparse.ArgumentParser(description='AI Employee Orchestrator (Gold Tier)')
@@ -911,10 +1055,16 @@ def main():
     # Get vault path
     if args.vault_path:
         vault_path = args.vault_path
+=======
+    # Get vault path from argument or use default
+    if len(sys.argv) > 1:
+        vault_path = sys.argv[1]
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
     else:
         # Default: sibling directory
         vault_path = Path(__file__).parent / 'AI_Employee_Vault'
 
+<<<<<<< HEAD
     # Create orchestrator
     orchestrator = Orchestrator(
         vault_path=str(vault_path),
@@ -975,3 +1125,27 @@ def main():
 
 if __name__ == '__main__':
     main()
+=======
+    # Create and run orchestrator
+    orchestrator = Orchestrator(
+        vault_path=str(vault_path),
+        check_interval=60  # Check every minute
+    )
+
+    print("=" * 50)
+    print("AI Employee Orchestrator")
+    print("=" * 50)
+    print(f"Vault: {vault_path}")
+    print(f"Monitoring: Needs_Action folder")
+    print("Press Ctrl+C to stop")
+    print()
+    print("To process tasks with Qwen Code, run:")
+    print(f"  qwen --cwd \"{vault_path}\" \"Process all files in /Needs_Action\"")
+    print()
+
+    orchestrator.run()
+
+
+if __name__ == '__main__':
+    main()
+>>>>>>> f3afea3cffaff1ce88817baa189802c7ef46fd73
